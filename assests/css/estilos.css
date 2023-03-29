@@ -1,0 +1,156 @@
+
+/*Estas son propiedades CSS asi en general de us comun en los views de html*/
+
+.EncabezadoViews {
+    background-image: url("D:/CODER VSC/Imagen/Encabezados.jpg");
+    background-size: 1900px; height: 200px;width: 1900px;
+    background-repeat: no-repeat;
+}
+
+.TituloViews {
+    text-align: left;
+    font-weight: bolder;
+    color: black;
+    font-size: 50px;
+}
+
+.FondoViews {
+    background-color: burlywood;
+}
+
+/*Aca empieza las propiedades CSS de locales.html*/
+
+.Locales {
+    float: left;
+    width: 40%;
+    padding: 5px;
+}
+
+.Locales2 {
+
+    float: left;
+    width: 40%;
+    padding: 5px;
+}
+
+.row {
+
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Aca termina las propiedades de CSS de locales.html*/
+
+/*Aca empieza las propiedades de CSS de galería.HTML*/
+
+.Galeria1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+.rowGalerias {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Aca termina las propiedades CSS de lo que seria galeria.html*/
+
+/*Aca empieza las propiedades de CSS de lo que seria Menú.HTML*/
+
+.TextoViews {
+    border: 1px;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    padding: 20px, 20px;
+    text-align: justify;
+}
+
+
+
+/*Aca empieza las propiedades CSS de lo que seria el inicio (index.html)*/
+
+#center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#FondoImagen {
+    background-image: url(https://image.freepik.com/foto-gratis/grill-restaurant-beef-menu-filete-flanco-sobre-tabla-piedra-negra_89816-5996.jpg);
+    background-repeat: no-repeat;
+    background-size: 1950px; height: 500px;width: 2000px;
+    background-position: center;
+    text-align: center;
+    font-size: 70px; 
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+
+ul {
+    list-style-type: none;
+    text-align: center
+  }
+  
+  li {
+    background-color: #F6E3CA;
+    border: #D7C8B6 2px solid;
+    display: inline;
+    margin-right: 10px;
+  }
+
+  
+#TituloMayor {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#Parrafos1 {
+    font-style: normal;
+}
+
+#Parrafo2 {
+    font-style: normal;
+}
+
+
+#Parrafo3 {
+    font-style: normal; 
+}
+
+#titulos {
+    text-transform: uppercase;
+    text-align: end;
+    color: black;
+    font-size: 30px;
+}
+
+#Parrafos4 {
+    text-align: end;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: none;
+}
+
+/*El footer se usa repetido para todos los htmls*/
+
+footer {
+background-color: black;
+color: white;
+}
