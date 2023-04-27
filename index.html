@@ -17,16 +17,21 @@
     <header>
       <nav>   
             <img src="./Imagen/logo.png" alt="logo de la pagina" id="center" height="200" width="150"> 
-            <!--El logo va centrado-->   
-              <ul>
-                  <li>  Inicio </li>
-                  <li> <a href="./views/menú.html"> Menú </a> </li>
-                  <li> <a href="./views/galería.html"> Galería </a> </li>
-                  <li> <a href="./views/locales.html"> Locales </a> </li>
-                  <li> <a href="#footer"> Contactanos</a> </li>
-                  
+
+            <div id="navigator"></div>
+              <div class="topnav">
+              <ul id="nav">
+                <li><a class="active"href="#inicio"> Inicio</a> </li>
+                <li> <a  href="./views/menu.html"> Menú</a> </li>
+                <li> <a  href="./views/galeria.html"> Galería</a> </li>
+                <li> <a  href="./views/locales.html"> Locales</a> </li>
+                <li> <a  href="./views/institucional.html"> Institucional</a> </li>
+                <li> <a href="#footer"> Contactanos</a> </li>
               </ul>
-      </nav>
+              </div>
+            </div>
+
+            </nav>
       
       <section id="FondoImagen">
         <p> WELCOME </p> 
@@ -42,8 +47,9 @@
       <h1>¿QUIÉNES SOMOS?</h1>
       </div>
 
+      <div class="ParrafosInicio">
         <div id="Parrafos1"> 
-        <p>Somos unos de los mejores y más finos restaurantes de la zona.</p> 
+        <p>Somos unos de los mejores y más finos restaurantes de la zona. ¿Que esperas para venir?</p> 
         </div>
 
         <div id="Parrafo2">
@@ -53,16 +59,17 @@
         <div id="Parrafo3">
         <p>Le aseguramos que se va a ir con una sonrisa y con una de las mejores experiencias culinarias que ha vivido.</p>
         </div>
-
+      </div>
           <!--Estos textos van de izquierda a derecha ordenados-->
           <!--van encerrados en cajas cada uno-->
+        
      </section>
 
      <!--Aca hay una separacion de section-->
       <br><br><br>
      <hr>
 
-     <section class="Secciones">
+     <section class="Secciones" id="ImagenTextoInicio">
 
       <img src="./Imagen/segunda imagen.jpg" alt="Foto de chef">
       <!--esta imagen va corrida hacia la izquierda-->
@@ -82,18 +89,74 @@
 
      </section>
 
+     <section class="FooterSection">
 
-     <footer id="footer">
-      <h2>Contactanos</h2>
-      <p>mail</p><p>numero de telefono</p>
-        <h2>Encuentranos en rrss</h2>
-
-      
-      <img src="./Imagen/logo.png" alt="Logo" height="60px" width="60px">
-      <p> "La magia del sabor" </p>
-
-     </footer>
-
+<footer id="footer">
+  <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <h3>Steak<span>House</span></h3>
+          <img src="./imagen/logo.png" alt="logo" height="100" width="150">
+  
+          <p class="footer-links">
+            
+            <a href="./index.html">Inicio</a>
+          
+            <a href="./views/galeria.html">Galería</a>
+          
+            <a href="./views/menu.html">Menú</a>
+            
+            <a href="./views/locales.html">Locales</a>
+            
+            <a href="./views/institucional.html">Institucional</a>
+          </p>
+  
+          <p class="footer-company-name">Steak House © Copyright 2021</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Argentina, Buenos Aires</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+54 9 11 3629-1942</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:Contacto@SteakHouse.com">Contancto@SteakHouse.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about">
+            <span> "La magia del sabor"</span>
+          </p>
+  
+          <div class="footer-icons">
+  
+            <img src="./imagen/snapchat.png"  alt="Logo de snapchat" height="70" width="75"> <i class="fa fa-snapchat"></i>
+            <img src="./imagen/twitter.png"  alt="Logo de twitter"  height="70" width="75"> <i class="fa fa-twitter"></i>
+            <img src="./imagen/linkedin.png" alt="Logo de linkedin" height="70" width="80"> <i class="fa fa-linkedin"></i>
+            <img src="./imagen/github.png" alt="Logo de github" height="70" width="75"> <i class="fa fa-github"></i>
+  
+          </div>
+  
+        </div>
+  
+      </footer>
+ 
+</footer>
+            
+              
+        
 </body>
 
 

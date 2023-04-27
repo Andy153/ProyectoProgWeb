@@ -14,16 +14,20 @@
 
     <header class="EncabezadoViews">
         <nav>   
+
+          <div id="navigator"></div>
+          <div class="topnav">
+          <ul id="nav">
+            <li><a  href="../index.html"> Inicio</a> </li>
+            <li> <a  href="../views/menu.html"> Menú</a> </li>
+            <li> <a  href="../views/galeria.html"> Galería</a> </li>
+            <li> <a class="active" href="../views/locales.html"> Locales</a> </li>
+            <li> <a  href="../views/institucional.html"> Institucional</a> </li>
             
-  
-                <ul class="ListasViews" >
-                    <li> <a href="../index.html"> Inicio </a></li>
-                    <li> <a href="./menú.html"> Menú </a> </li>
-                    <li> <a href="./galería.html"> Galería </a> </li>
-                    <li> <a href="./locales.html"> Locales </a> </li>
-                    
-  
-                </ul>
+          </ul>
+          </div>
+        </div>
+
         </nav>
 
         <div class="TituloViews">
@@ -35,49 +39,125 @@
     
 
  <section class="FondoViews">
-    <div class="row">
-    
-        <div class="Locales">
-            <img src="../Imagen/Restaurante-San Isidro.jpg" alt="Foto restaurante San Isidro" style="width: 100%;" >
-            <p>SAN ISIDRO</p>
 
-        </div>
-
-        <div class="Locales">
-            <img src="../Imagen/Restaurante-Caballito.jpg" alt="Foto restaurante Caballito" style="width: 125%;">
-            <p>CABALLITO</p>
-
-        </div>
+    <div class="Grid-container">
 
 
-        <div class="Locales2">
-            <img src="../Imagen/Locales-Puerto Mader.jpg" alt="Foto restaurante Puerto Madero" style="width: 100%;" >
-            <p>PUERTO MADERO</p>
 
-        </div>
+        <article class="location-listing">
+            <a class="location-title" href="#">San Isidro</a>
+            <div class="location-image">
+              <a href="#">
+                <img src="../Imagen/Restaurante-San Isidro.jpg" alt="Local San isidro" class="ImagenesLocales">
+              </a>
+            </div>
+          </article>
 
-        <div class="Locales2">
-            <img src="../Imagen/Restaurante-Belgrano.jpg" alt="Foto restaurante Belgrano" style="width: 100%;">
-            <p>BELGRANO</p>
 
-        </div>
-    
-    <div/>
 
-    </section>
+          <article class="location-listing">
+            <a class="location-title" href="#">Caballito</a>
+            <div class="location-image">
+              <a href="#">
+                <img src="../Imagen/Restaurante-Caballito.jpg" alt="Foto restaurante Caballito" class="ImagenesLocales">
+              </a>
+            </div>
+          </article>
+
+
+          <article class="location-listing">
+            <a class="location-title" href="#">Puerto Madero</a>
+            <div class="location-image">
+              <a href="#">
+                <img src="../Imagen/Locales-Puerto Mader.jpg" alt="Foto restaurante Puerto Madero" class="ImagenesLocales">
+              </a>
+            </div>
+          </article>
+            
+        
+          <article class="location-listing">
+            <a class="location-title" href="#">Belgrano</a>
+            <div class="location-image">
+              <a href="#">
+                <img src="../Imagen/Restaurante-Belgrano.jpg" alt="Foto restaurante Belgrano" class="ImagenesLocales">
+              </a>
+            </div>
+          </article>
+               
+              
+
+
+
+    </div>
+ </section>
        
 
-    <footer id="footer"> 
-       <hr>
-       <h2>Contactanos</h2>
-       <p>mail</p><p>numero de telefono</p>
-         <h2>Encuentranos en rrss</h2>
+<section class="FooterSection">
+
+<footer>
+  <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <h3>Steak<span>House</span></h3>
+          <img src="../imagen/logo.png" alt="logo" height="100" width="150">
+  
+          <p class="footer-links">
+            
+            <a href="../index.html">Inicio</a>
+          
+            <a href="../views/galeria.html">Galería</a>
+          
+            <a href="../views/menu.html">Menú</a>
+            
+            <a href="../views/locales.html">Locales</a>
+            
+            <a href="../views/institucional.html">Institucional</a>
+          </p>
+  
+          <p class="footer-company-name">Steak House © Copyright 2021</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Argentina, Buenos Aires</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+54 9 11 3629-1942</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:Contacto@SteakHouse.com">Contancto@SteakHouse.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about">
+            <span> "La magia del sabor"</span>
+          </p>
+  
+          <div class="footer-icons">
+  
+            <img src="../imagen/snapchat.png"  alt="Logo de snapchat" height="80" width="80"> <i class="fa fa-snapchat"></i>
+            <img src="../imagen/twitter.png"  alt="Logo de twitter"  height="80" width="85"> <i class="fa fa-twitter"></i>
+            <img src="../imagen/linkedin.png" alt="Logo de linkedin" height="80" width="90"> <i class="fa fa-linkedin"></i>
+            <img src="../imagen/github.png" alt="Logo de github" height="80" width="85"> <i class="fa fa-github"></i>
+  
+          </div>
+  
+        </div>
+  
+      </footer>
  
-       
-       <img src="../Imagen/logo.png" alt="Logo" height="60px" width="60px">
-       <p> "La magia del sabor" </p>
-
-    </footer>
+</footer>
+            
 
 
 
