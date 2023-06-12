@@ -3,6 +3,7 @@
 /*Estas son propiedades CSS asi en general de us comun en los views de html*/
 body{
     width: 100%;
+    margin: 0
 }
 .EncabezadoViews {
   background-image: url("img/Encabezados.png");
@@ -708,7 +709,6 @@ body{
 
 
 :root{
-  --facebook: #3b5999;
   --instagram: #e4405f;
   --whatsapp: #25d366;
   --github:#6e5494;
@@ -752,9 +752,7 @@ body{
   filter: none;
 }
 
-.redes-conteiner ul li .facebook:hover{
-  background: var(--facebook);
-}
+
 .redes-conteiner ul li .instagram:hover{
   background: var(--instagram);
 }
