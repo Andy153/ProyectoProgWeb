@@ -119,125 +119,41 @@ background: rgba(90,0,10,0.4);
 width: 100%;
 height: 100%;
 }
-.trans
-{
-transition: all 1s ease;
--moz-transition: all 1s ease;
--ms-transition: all 1s ease;
--o-transition: all 1s ease;
--webkit-transition: all 1s ease;
-}
-.top
-{
-display: flex;
-width: 80vw;
-height: 80vh;
-margin-top: 10vh;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 10vh;
-}
-.top ul
-{
-list-style: none;
-width: 100%;
-height: 100%;
-z-index: 1;
-box-sizing: border-box;
-}
-.top ul li
-{
-position: relative;
-float: left;
-width: 25%;
-height: 25%;
-overflow: hidden;
-}
-
-.top ul li::before
-{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #000;
-content: '';
-color: white;
-opacity: 0.4;
-text-align: center;
-box-sizing: border-box;
-pointer-events: none;
-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--ms-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
--webkit-transition: all 0.5s ease;
-}
-.top ul li:hover::before
-{
-opacity: 0;
-background-color: rgba(0,0,0,0.90);
-}
-.top ul li img
-{
-width: 100%;
-height: auto;
-overflow: hidden;
-}
-.lightbox
-{
-position: fixed;
-width: 100%;
-height: 100%;
-text-align: center;
-top: 0;
-left: 0;
-background-color: rgba(0,0,0,0.75);
-z-index: 999;
-opacity: 0;
-pointer-events: none;
-}
-.lightbox img
-{
-max-width: 90%;
-max-height: 80%;
-position: relative;
-top: -100%;
-/* Transition */
-transition: all 1s ease;
--moz-transition: all 1s ease;
--ms-transition: all 1s ease;
--o-transition: all 1s ease;
--webkit-transition: all 1s ease;
-}
-.lightbox:target
-{
-outline: none;
-top: 0;
-opacity: 1;
-pointer-events: auto;
-transition: all 1.2s ease;
--moz-transition: all 1.2s ease;
--ms-transition: all 1.2s ease;
--o-transition: all 1.2s ease;
--webkit-transition: all 1.2s ease;
-}
-.lightbox:target img
-{
-top: 0;
-top: 50%;
-transform: translateY(-50%);
--moz-transform: translateY(-50%);
--ms-transform: translateY(-50%);
--o-transform: translateY(-50%);
--webkit-transform: translateY(-50%);
-}
-
-.img-thumbnail {
-width: 40%;
-height: 50%;
-}
+.galeria img {
+  box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+  border-radius: 15px;
+  }
+  
+  .materialbox-caption {
+  bottom: 30px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  background: #000;
+  box-shadow: 5px 5px #fff;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+  }
+  
+  .galeria .col {
+  margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 600px){
+  .materialbox-caption {
+       width: 90%;
+  }
+  }
+  
+  @media screen and (max-width: 992px){
+  .materialbox-caption {
+       width: 70%;
+  }
+  }
+  
 
 /*Aca termina las propiedades CSS de lo que seria galeria.html*/
 
@@ -527,20 +443,20 @@ display: none;
 }
 
 @media only screen and (max-width: 850px) {
-
-
-#nav {
-  display: none;
+  #nav {
+    display: block;
+  }
+  
+  #nav.responsive {
+    display: none;
+  }
+  
+  #nav li {
+    display: block;
+    margin: 10px 0;
+  }
 }
 
-#nav.responsive {
-  display: block;
-}
-
-#nav.responsive li {
-  margin: 10px 0;
-}
-}
 
 
 
@@ -1077,6 +993,139 @@ background: var(--github);
 
 /*Aca estan los estilos del view de preguntas frecuentes*/
 
+.section-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 70%;
+  height: auto;
+  padding: 1rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: rgb(24, 23, 23);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.premio-img {
+  width: 100%;
+  height: 10rem;
+  background-image: url("/imagen/Foto\ galeria\ restaurante\ 14.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.premio-info {
+  text-align: center;
+}
+
+.sorteo {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+
+.limite {
+  display: flex;
+  flex-direction: row;
+   justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+.boton-reclamar {
+  position: relative;
+  width: 60%;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #aa3333;
+  color: black;
+}
+
+.boton-reclamar:hover {
+  box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+  .section-center {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  
+  .section-center {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  
+  .section-center {
+    flex-direction: row;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  
+  .premio-img {
+    width: 30rem;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  }
+
+ 
+  .premio-info {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .sorteo {
+    font-size: 1.5rem;
+  }
+
+  .limite {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+ 
+  .boton-reclamar {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
 :root {
 --font-pops: "Poppins", sans-serif;
 --main-bg: #d4dbe9;
@@ -1169,8 +1218,6 @@ box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
 -moz-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
 }
 
-/** Media Queries **/
-
 @media only screen and (max-width: 1025px) {
 .main-container {
   width: 55%;
@@ -1260,40 +1307,6 @@ pointer-events: all;
 
 
 
-.galeria img {
-box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
-border-radius: 15px;
-}
-
-.materialbox-caption {
-bottom: 30px;
-right: 0;
-width: 40%;
-height: auto;
-padding: 10px;
-margin: auto;
-background: #000;
-box-shadow: 5px 5px #fff;
-font-size: 20px;
-color: #fff;
-line-height: 28px;
-}
-
-.galeria .col {
-margin-bottom: 20px;
-}
-
-@media screen and (max-width: 600px){
-.materialbox-caption {
-     width: 90%;
-}
-}
-
-@media screen and (max-width: 992px){
-.materialbox-caption {
-     width: 70%;
-}
-}
 
 
 
